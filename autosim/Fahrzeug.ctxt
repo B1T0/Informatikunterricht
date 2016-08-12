@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ run()
+comment1.params=
+comment1.target=boolean\ lives()
+comment2.params=
+comment2.target=void\ printInfo()
+comment3.params=
+comment3.target=void\ decreaseFuel()
+comment4.params=
+comment4.target=void\ race()
+comment5.params=
+comment5.target=void\ increaseFuel()
+numComments=6

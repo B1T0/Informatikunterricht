@@ -1,2 +1,4 @@
 #BlueJ class context
-numComments=0
+comment0.target=Wall
+comment0.text=\r\n\ Die\ Wall\ stellt\ ein\ Hindernis\ fuer\ Monster\ und\ Helden\ dar.\r\n\ Sie\ muss\ umrundet\ werden.\r\n
+numComments=1

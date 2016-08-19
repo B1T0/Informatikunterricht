@@ -24,13 +24,28 @@ public class MuHWelt extends World
         Held held = new Held();
         addObject(held, 0,getHeight());
        
+        createWalls();
         verteilePillen();
     }
     
-    private void verteilePillen(){
-       addObject(new Pill(), 5,5);  
+    private void createWalls(){
+        for (int k = 1; k < 13; k++){
+            if (k % 2 == 1) {
+                for (int i = 1; i < 9; i++){
+                    addObject(new Wall(), k,i);
+                }
+            }
+        }
     }
-    
-       
   
+    private void verteilePillen(){
+       for (int x = 0; x < 15; x++){
+           for (int y = 0; y < 11; y++){
+               java.util.List objectsList = getObjectsAt(x,y,null);
+               if (objectsList.isEmpty()){
+                   addObject(new Pill(), x,y);
+               }
+           }
+       }
+    }
 }

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MuHWelt()
+comment0.text=\r\n\ Erschaffe\ eine\ Welt\ mit\ 14\ *\ 10\ Zellen.\r\n
+comment1.params=
+comment1.target=void\ verteilePillen()
+numComments=2

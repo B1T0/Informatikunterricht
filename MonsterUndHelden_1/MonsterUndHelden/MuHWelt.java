@@ -12,6 +12,9 @@ public class MuHWelt extends World
     /**
      * Erschaffe eine Welt mit 14 * 10 Zellen.
      */
+    
+    Held held = new Held();
+    Monster intelliMonster = new Monster(true);
     public MuHWelt()
     {
         super(14, 10, zellenGroesse);
@@ -21,31 +24,39 @@ public class MuHWelt extends World
         
         // Welt einrichten
         // Kamproboter1 in linker, unterer Ecke
-        Held held = new Held();
-        addObject(held, 0,getHeight());
        
+        addObject(held, 0,getHeight());
+        addObject(intelliMonster, getWidth(),0);
+        
         createWalls();
         verteilePillen();
     }
     
     private void createWalls(){
         for (int k = 1; k < 13; k++){
-            if (k % 2 == 1) {
-                for (int i = 1; i < 9; i++){
+            for (int i = 1; i < 9; i++){
+                if(Greenfoot.getRandomNumber(4)==1)
                     addObject(new Wall(), k,i);
-                }
             }
         }
     }
   
     private void verteilePillen(){
-       for (int x = 0; x < 15; x++){
-           for (int y = 0; y < 11; y++){
+       for (int x = 0; x < getWidth(); x++){
+           for (int y = 0; y < getHeight(); y++){
                java.util.List objectsList = getObjectsAt(x,y,null);
-               if (objectsList.isEmpty()){
+               if (objectsList.isEmpty() && Greenfoot.getRandomNumber(4) == 1){
                    addObject(new Pill(), x,y);
                }
            }
        }
+    }
+    
+    public int xHeld(){
+        return held.getX();
+    }
+    
+    public int yHeld(){
+        return held.getY();
     }
 }

@@ -1,7 +1,15 @@
 #BlueJ class context
 comment0.target=Monster
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Monster\ here.\r\n\ \r\n\ @author\ Olaf\ Sielemann\r\n\ @version\ April\ 2015\r\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Monster\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment1.params=intelligence
+comment1.target=Monster(boolean)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Monster\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ removeWall()
+comment4.params=
+comment4.target=void\ turnToHeld()
+comment5.params=
+comment5.target=void\ turnRandom()
+numComments=6

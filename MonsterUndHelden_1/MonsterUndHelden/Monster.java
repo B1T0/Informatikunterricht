@@ -27,6 +27,7 @@ public class Monster extends Wesen{
             if(intelligent){
                 turnToHeld();
             } else {
+                turnRandom();
             }
             if(Greenfoot.getRandomNumber(3)<2)
                 removeWall();
@@ -68,5 +69,11 @@ public class Monster extends Wesen{
        }
     }
     
+    private void turnRandom(){
+        int randTurn = Greenfoot.getRandomNumber(9);
+        if(randTurn < 6) setRotation(0);
+        if(randTurn < 8) setRotation(90);
+        if(randTurn < 10) setRotation(270);
+    }
     
 }

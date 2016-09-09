@@ -15,6 +15,7 @@ public class MuHWelt extends World
     
     Held held = new Held();
     Monster intelliMonster = new Monster(true);
+    Monster stupidMonster = new Monster(false);
     public MuHWelt()
     {
         super(14, 10, zellenGroesse);
@@ -27,6 +28,7 @@ public class MuHWelt extends World
        
         addObject(held, 0,getHeight());
         addObject(intelliMonster, getWidth(),0);
+        addObject(stupidMonster, getWidth(),getHeight()/2);
         
         createWalls();
         verteilePillen();
